@@ -5,10 +5,6 @@ TASK: palsquare
 
 Jan 2, 2018
 """
-
-with open('palsquare.in','r') as fin:
-    B = int(fin.readline())
-
 def toBase(n, b):
     l = 0
     result = []
@@ -25,6 +21,10 @@ def toBase(n, b):
         n %= (b**i)
 
     return ''.join(result)
+
+
+with open('palsquare.in','r') as fin:
+    B = int(fin.readline())
 
 with open('palsquare.out','w') as fout:
     for n in range(1,301):
