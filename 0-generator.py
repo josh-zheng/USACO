@@ -22,7 +22,7 @@ with open(fn, 'w') as fout:
     fout.write(s)
 
     s = "with open('" + name + ".out', 'w') as fout:\n"
-    s += "    fout.write(result+'\\n')\n"
+    s += "    fout.write(str(result) + '\\n')\n"
 
     fout.write(s)
 
